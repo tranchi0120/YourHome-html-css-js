@@ -1,0 +1,48 @@
+.banner {
+  font-family: $font-inter;
+  margin-top: 150px;
+
+
+  &-main {
+    background-color: $bgr-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 53px !important;
+    border: none;
+    border-radius: 10px;
+  }
+
+  &-title {
+    width: 622px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+
+  }
+
+  &-content {
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $bgr;
+    width: 750px;
+    text-align: center;
+    font-family: $font-inter;
+
+  }
+
+  &-btn {
+    width: 170px;
+    height: 60px;
+    color: $color-text;
+    border: none;
+    border-radius: 10px;
+    margin-top: 48px;
+    cursor: pointer;
+  }
+}

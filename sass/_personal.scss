@@ -1,0 +1,96 @@
+.personal {
+  font-family: $font-inter;
+  margin-top: 120px;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+  }
+
+
+  &-icon {
+    // color: $bgr-orange;
+    color: rgb(99, 97, 97);
+    font-size: 34px;
+    cursor: pointer;
+  }
+
+  &-active {
+    color: $bgr-orange;
+
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    gap: 23px 0;
+
+    &-title {
+      font-size: 42px;
+      line-height: 52px;
+      font-weight: 700;
+      color: $color-text;
+    }
+
+    // &-star {
+    //   color: $bgr-orange;
+    //   font-size: 34px;
+    // }
+
+
+
+    &-content {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #484848;
+      width: 368px;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    gap: 15px;
+
+    &-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #ff5c00;
+      font-size: 25px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    &-icon:first-child {
+      background-color: #F98D51;
+      pointer-events: none;
+    }
+  }
+
+  &-image {
+    position: relative;
+  }
+
+  &-image::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 623px;
+    position: absolute;
+    z-index: -1;
+    border: none;
+    border-radius: 15px;
+  }
+
+}

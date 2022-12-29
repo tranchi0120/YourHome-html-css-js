@@ -1,0 +1,47 @@
+.address {
+  &-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: $font-inter;
+    color: #000000;
+    margin-bottom: 18px;
+    margin-top: 22px;
+    display: inline-block
+  }
+
+  &-select {
+    font-size: 22px;
+    color: #ADADAD;
+    border: none;
+    padding: 20px;
+    align-items: center;
+    width: 268px;
+    height: 55px;
+    background-color: #f0f0f0;
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font-inter;
+  }
+
+  &-search {
+    width: 82px;
+    height: 55px;
+    color: white;
+    background-color: $bgr-orange;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,66 @@
+.questions {
+  font-family: $font-inter;
+  margin-top: 150px;
+
+  &-title {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-group {
+    margin-top: 50px;
+  }
+
+  &-box {
+
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 4px solid #484848;
+
+
+    &-top {
+      position: relative;
+      cursor: pointer
+    }
+
+
+    &-title,
+    &-content {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 700;
+      pointer-events: none;
+    }
+
+    &-icon {
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      font-size: 30px;
+    }
+
+
+
+    &-content {
+      margin-top: 23px;
+      color: #484848;
+      font-weight: 400;
+      display: none;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s linear;
+    }
+
+    .active-content {
+      display: block;
+      height: auto !important;
+    }
+  }
+
+  &-box:last-child {
+    border-bottom: none !important;
+
+  }
+}

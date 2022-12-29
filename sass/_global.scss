@@ -1,0 +1,46 @@
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: $bgr-header;
+}
+
+.container {
+  max-width: 1178px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 170px;
+  height: 47px;
+  border: none;
+  border-radius: 10px;
+  background-color: $bgr-orange;
+  color: $bgr;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: $bgr;
+  color: $bgr-orange;
+}
