@@ -44,3 +44,16 @@ a {
   background-color: $bgr;
   color: $bgr-orange;
 }
+
+
+// @media screen and (max-width: 1023px) and (min-width: 740px) {
+//   .container {
+//     padding: 0 20px !important;
+//   }
+// }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 20px !important;
+  }
+}

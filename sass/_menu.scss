@@ -2,10 +2,24 @@
 
 .menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 42px;
 
+  &-open,
+  &-close {
+    display: none;
+    font-size: 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &-close {
+    z-index: 10000;
+    right: 25px;
+    position: fixed;
+    top: 15px
+  }
 
 
   &-link {
@@ -36,6 +50,7 @@
     left: 0;
     transform: scaleX(0);
     transition: transform 0.7s ease-in-out;
+
   }
 
   &-item:hover::before {
@@ -46,5 +61,63 @@
 
 
 
+}
 
+.show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #d7e2e7;
+  transform-origin: right;
+  gap: 20px;
+  flex-direction: column;
+  padding: 70px;
+  transform: translateX(100%);
+  transition: transform 0.8s ease-in-out;
+  display: none;
+  z-index: 100;
+}
+
+.coating {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 739px) {
+  .menu {
+    display: none;
+
+    &-open {
+      display: block;
+
+    }
+
+
+  }
+
+  .show {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    transform: translateX(0);
+
+  }
 }

@@ -1,5 +1,4 @@
 let valueDisplays = document.querySelectorAll('.item-number');
-console.log("valueDisplays: " + valueDisplays)
 let interval = 4000;
 
 valueDisplays.forEach((valueDisplay) => {
@@ -73,3 +72,19 @@ function initRating(wrapperSelector, starsSelector) {
 initRating('.personal-box-star', '.personal-icon');
 
 
+// ------------- Show Menu --------------------
+const showMenu = document.querySelector('.menu-open')
+const menu = document.querySelector('.menu')
+const closeMenu = document.querySelector('.menu-close')
+
+showMenu.onclick = function () {
+  menu.classList.add('show')
+  
+
+  closeMenu.style.display = 'flex'
+}
+
+closeMenu.onclick = function () {
+  menu.classList.remove('show')
+   closeMenu.style.display = 'none'
+}

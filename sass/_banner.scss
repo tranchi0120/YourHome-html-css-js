@@ -46,3 +46,29 @@
     cursor: pointer;
   }
 }
+
+
+@media screen and (max-width: 739px) {
+  .banner {
+    &-title {
+      width: 100%;
+    }
+
+    &-content {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+  .banner {
+    &-title {
+      width: 100%;
+      text-align: left;
+    }
+
+    &-content {
+      width: 100%;
+    }
+  }
+}

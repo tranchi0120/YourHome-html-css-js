@@ -38,6 +38,7 @@
 
     &-img {
       object-fit: cover;
+      width: 100%;
     }
   }
 
@@ -66,5 +67,30 @@
       line-height: 24px;
       display: block;
     }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .locations {
+    &-group {
+      gap: 30px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 739px) {
+  .locations {
+    &-group {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &-content {
+      width: 100%;
+    }
+
   }
 }

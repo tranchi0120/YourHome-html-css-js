@@ -71,4 +71,41 @@
     border-radius: 50%;
     color: $bgr;
   }
+
+  &-images-img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .advantages {
+    &-main {
+      align-items: initial;
+      flex-direction: column;
+    }
+
+    &-box {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .advantages {
+    &-title {
+      text-align: center;
+      width: 100%;
+    }
+
+    &-box {
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    &-box-text {
+      width: 100%;
+    }
+  }
 }

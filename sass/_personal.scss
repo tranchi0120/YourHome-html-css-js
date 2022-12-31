@@ -5,7 +5,6 @@
   &-main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 130px;
   }
 
@@ -34,10 +33,6 @@
       color: $color-text;
     }
 
-    // &-star {
-    //   color: $bgr-orange;
-    //   font-size: 34px;
-    // }
 
 
 
@@ -76,6 +71,7 @@
   }
 
   &-image {
+    text-align: center;
     position: relative;
   }
 
@@ -93,4 +89,67 @@
     border-radius: 15px;
   }
 
+}
+
+@media screen and (max-width: 1023px) {
+  .personal {
+    &-main {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .personal {
+    &-main {
+      gap: 30px;
+      text-align: left;
+    }
+
+    &-box-content {
+      width: 100%;
+    }
+
+    &-image,
+    &-image-img {
+      width: 100%;
+    }
+
+    &-image::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #F0F0F0;
+      width: 100%;
+      height: 600px;
+      position: absolute;
+      z-index: -1;
+      border: none;
+      border-radius: 15px;
+    }
+
+    &-content {
+      width: 100%;
+    }
+
+  }
+}
+
+@media screen and (max-width:500px) {
+  .personal {
+    &-image::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #F0F0F0;
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      z-index: -1;
+      border: none;
+      border-radius: 15px;
+    }
+  }
 }

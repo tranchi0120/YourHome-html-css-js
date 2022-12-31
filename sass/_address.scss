@@ -45,3 +45,22 @@
     margin-top: 70px;
   }
 }
+
+
+@media screen and (max-width: 739px) {
+  .address {
+    &-select {
+      gap: 20px;
+      width: 100%;
+      color: #ADADAD;
+      border: none;
+      padding: 20px;
+      align-items: center;
+      height: 55px;
+      background-color: #f0f0f0;
+      display: flex;
+      border-radius: 10px;
+    }
+  }
+
+}
