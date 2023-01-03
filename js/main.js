@@ -76,15 +76,18 @@ initRating('.personal-box-star', '.personal-icon');
 const showMenu = document.querySelector('.menu-open')
 const menu = document.querySelector('.menu')
 const closeMenu = document.querySelector('.menu-close')
+const main = document.querySelector('.main')
 
 showMenu.onclick = function () {
   menu.classList.add('show')
-  
-
-  closeMenu.style.display = 'flex'
+  closeMenu.style.opacity = '1'
+  main.classList.add('blur')
 }
 
 closeMenu.onclick = function () {
   menu.classList.remove('show')
-   closeMenu.style.display = 'none'
+  closeMenu.style.opacity = '0'
+  main.classList.remove('blur')
+  
+
 }
