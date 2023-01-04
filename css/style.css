@@ -343,24 +343,27 @@ a {
   display: inline-block;
 }
 .address-select {
-  font-size: 22px;
+  position: relative;
+  padding: 0 10px;
   color: #ADADAD;
   border: none;
-  padding: 20px;
   align-items: center;
-  width: 268px;
   height: 55px;
   background-color: #f0f0f0;
   display: flex;
   border-radius: 10px;
-  display: flex;
+  gap: 5px;
   justify-content: space-between;
 }
 .address-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  outline: none;
+  color: black;
   font-family: "Inter", sans-serif;
+  margin-left: 20px;
 }
 .address-search {
   width: 82px;
@@ -374,10 +377,20 @@ a {
   border-radius: 10px;
   margin-top: 70px;
 }
+.address-icon {
+  cursor: pointer;
+}
+.address-icon-home {
+  position: absolute;
+}
+.address-icon-down {
+  position: absolute;
+  right: 15px;
+}
 
 @media screen and (max-width: 739px) {
   .address-select {
-    gap: 20px;
+    gap: 0px;
     width: 100%;
     color: #ADADAD;
     border: none;
